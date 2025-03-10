@@ -1,0 +1,22 @@
+<nz-drawer
+  [nzVisible]="isDrawerOpen"
+  [nzPlacement]="'right'"
+  [nzTitle]="titleTemplate"
+  [nzWidth]="drawerWidth"
+  (nzOnClose)="closeDrawer()"
+  [nzClosable]="false"
+>
+  <!-- <ng-container *nzDrawerContent>
+    <ng-content></ng-content>
+  </ng-container> -->
+  <ng-container *nzDrawerContent>
+    <!-- <ng-content></ng-content> -->
+    <p>hello rowld</p>
+  </ng-container>
+  <ng-template #titleTemplate>
+    <div class="custom-drawer-header">
+      <span>Shopping Cart</span>
+      <button (click)="closeDrawer()">Close</button>
+    </div>
+  </ng-template>
+</nz-drawer>

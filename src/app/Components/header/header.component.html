@@ -1,0 +1,10 @@
+<section class="section">
+  <div class="section__container">
+    <button (click)="openDrawer()">cart</button>
+  </div>
+</section>
+
+<app-drawer-cart [isDrawerOpen]="isDrawerOpen" (drawerClose)="closeDrawer()">
+  <p>This is the content of my drawer.</p>
+  <p>You can add any component or content here.</p>
+</app-drawer-cart>

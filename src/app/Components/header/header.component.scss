@@ -1,0 +1,21 @@
+.section {
+  max-width: 1280px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 30px 40px;
+
+  &__container {
+    display: flex;
+    justify-content: end;
+    button {
+      cursor: pointer;
+      padding: 10px 15px;
+      border: 1px solid green;
+      background: green;
+      color: #ffffff;
+      font-family: "Times New Roman", Times, serif;
+      font-weight: 700;
+      border-radius: 10px;
+    }
+  }
+}
