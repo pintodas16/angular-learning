@@ -1,0 +1,33 @@
+// Container for the slider
+.slider-container {
+  width: 100%;
+  overflow: hidden;
+}
+
+// Flexbox container for the sliding cards
+.card-wrapper {
+  display: flex;
+  transition: transform 1s ease-in-out; // Smooth sliding transition
+}
+
+// Each individual card
+.card {
+  width: 20%; // Each card takes up 1/5th of the width
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1e40af; // Blue background
+  color: white;
+  border-radius: 8px;
+  font-size: 18px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+// Optional: Add some responsiveness
+@media (max-width: 768px) {
+  .card {
+    width: 50%; // On smaller screens, each card takes up 50% of the width
+  }
+}

@@ -1,0 +1,42 @@
+<section class="our__mission">
+  <div class="our__mission__container">
+    <div class="our__mission__container__content flex__container">
+      <div class="our__mission__container__content__text">
+        <h5>Hello title</h5>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid ipsa
+          ea blanditiis libero explicabo nobis perspiciatis ipsum in veritatis
+          nulla.
+        </p>
+      </div>
+      <div class="our__mission__container__content__imgbox">
+        <div class="our__mission__container__content__imgbox--img">
+          <img src="assets/img/dirty-burger.jpg" alt="" />
+        </div>
+        <button
+          (click)="openModal()"
+          class="our__mission__container__content__imgbox--play"
+        >
+          <span>></span>
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- <app-modal [isOpen]="showModal" (close)="showModal = false">
+  <h2>Modal Title</h2>
+  <p>This is a simple modal with SCSS styling!</p>
+</app-modal> -->
+
+<app-modaltwo [isModalshow]="showModal" (closeModal)="handleClose()">
+  <iframe
+    class="iframe"
+    src="https://www.youtube.com/embed/tuDbSVyClzI?si=t8gXET57XNUxhN7P?autoplay=1&controls=0"
+    title="YouTube video player"
+    frameborder="0"
+  ></iframe>
+  <!-- <video
+    src="https://www.youtube.com/embed/tuDbSVyClzI?si=t8gXET57XNUxhN7P?controls=0"
+  ></video> -->
+</app-modaltwo>
